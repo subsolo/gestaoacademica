@@ -1,0 +1,567 @@
+{
+	"info": {
+		"_postman_id": "85b87459-b593-4c5f-9ccb-6a0e6ab5c5ec",
+		"name": "GestaoAcademica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Aluno",
+			"item": [
+				{
+					"name": "http://localhost:8080/GestaoAcademica/aluno/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigo\": 1,\n\t\"nome\": \"Bruno\",\n\t\"email\": \"bruno@bruno.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/aluno/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"aluno",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/GestaoAcademica/aluno/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigo\": 1,\n\t\"nome\": \"Bruno\",\n\t\"email\": \"bruno@bruno.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/aluno/pesquisar-por-codigo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"aluno",
+								"pesquisar-por-codigo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/GestaoAcademica/aluno/1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigo\": 1,\n\t\"nome\": \"BrunoTeste\",\n\t\"email\": \"bruno@bruno.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/aluno/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"aluno",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/GestaoAcademica/aluno/listar-alunos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigo\": 1,\n\t\"nome\": \"Bruno\",\n\t\"email\": \"bruno@bruno.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/aluno/listar-alunos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"aluno",
+								"listar-alunos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/GestaoAcademica/aluno/1",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigo\": 1,\n\t\"nome\": \"Bruno\",\n\t\"email\": \"bruno@bruno.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/aluno/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"aluno",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nota",
+			"item": [
+				{
+					"name": "http://localhost:8080/GestaoAcademica/nota/1",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigo\": 1,\n\t\"nome\": \"Bruno\",\n\t\"email\": \"bruno@bruno.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/nota/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"nota",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/GestaoAcademica/nota/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigoDisciplina\": 1,\n\t\"codigoAluno\": 1,\n\t\"frequencia\": 10,\n\t\"nota\": 8.5\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/nota/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"nota",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/GestaoAcademica/nota/pesquisar-por-codigo/1/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigo\": 1,\n\t\"nome\": \"Bruno\",\n\t\"email\": \"bruno@bruno.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/nota/pesquisar-por-codigo/1/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"nota",
+								"pesquisar-por-codigo",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/GestaoAcademica/nota/1/1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigoDisciplina\": 1,\n\t\"codigoAluno\": 1,\n\t\"frequencia\": 11,\n\t\"nota\": 8.5\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/nota/1/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"nota",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/GestaoAcademica/nota/listar-notas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigo\": 1,\n\t\"nome\": \"Bruno\",\n\t\"email\": \"bruno@bruno.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/nota/listar-notas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"nota",
+								"listar-notas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Disciplina",
+			"item": [
+				{
+					"name": "http://localhost:8080/GestaoAcademica/disciplina/pesquisar-por-codigo/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigo\": 1,\n\t\"nome\": \"Programacao VI\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/disciplina/pesquisar-por-codigo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"disciplina",
+								"pesquisar-por-codigo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/GestaoAcademica/disciplina/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigo\": 1,\n\t\"nome\": \"Programacao V\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/disciplina/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"disciplina",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/GestaoAcademica/disciplina/1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigo\": 1,\n\t\"nome\": \"Programacao VI\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/disciplina/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"disciplina",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/GestaoAcademica/disciplina/listar-disciplinas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigo\": 1,\n\t\"nome\": \"Bruno\",\n\t\"email\": \"bruno@bruno.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/disciplina/listar-disciplinas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"disciplina",
+								"listar-disciplinas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/GestaoAcademica/disciplina/1",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigo\": 1,\n\t\"nome\": \"Programacao VI\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/disciplina/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"disciplina",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Geral",
+			"item": [
+				{
+					"name": "http://localhost:8080/GestaoAcademica/api/listar-geral",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"codigo\": 1,\n\t\"nome\": \"Bruno\",\n\t\"email\": \"bruno@bruno.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/GestaoAcademica/api/listar-geral",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"GestaoAcademica",
+								"api",
+								"listar-geral"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

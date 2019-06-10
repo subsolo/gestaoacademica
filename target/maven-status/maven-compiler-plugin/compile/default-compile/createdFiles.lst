@@ -1,0 +1,10 @@
+rest\api\DisciplinaApi.class
+rest\api\ListagemAcademicaApi.class
+rest\model\Disciplina.class
+rest\model\Nota.class
+rest\resource\AlunoRest.class
+rest\api\AlunoApi.class
+rest\config\ServiceConfig.class
+rest\resource\GestaoAcademicaRest.class
+rest\model\Aluno.class
+rest\api\NotaApi.class
